@@ -1,1 +1,26 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int N, K;//N=annual sarlay,K=interest rate;
+	while (cin >> N >> K) {
+		int M = 1;
+		float totalSlarary = N, sumPrice = 200,m=0;//total= sum of sarlaries in M years.sumPrice=sum of house price in M years.
+		while (true) {			
+			m = totalSlarary/sumPrice;
+			if (M <= 20 && m>=1) {
+				cout << M << endl;
+				break;
 
+			}
+			else if (M > 20) {
+				cout << "Impossible" << endl;
+				break;
+			}
+			sumPrice += sumPrice*K / 100;
+			totalSlarary += N;
+			M++;
+		}
+	}
+	system("pause");
+	return 0;
+}
