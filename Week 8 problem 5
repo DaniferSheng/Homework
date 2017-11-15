@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int n=10;
+	while (n >= 10 && n < 100) { 
+		cin >> n;
+    int i = 0, a[90];
+	for (i= 0; i < 90; i++) {
+		int m=
+    if()
+	}
+	}
+	system("pause");
+	return 0;
+}
